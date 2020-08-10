@@ -1,7 +1,7 @@
 package Models
 
 class Livro constructor(val titulo:String, val ano: Int) {
-       var autores = mutableListOf<Autor>()
+       
        fun AdicionarAutor() {
            val autor_nome = readLine().toString()           
            val autor_2nome = readLine().toString()
