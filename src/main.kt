@@ -29,7 +29,10 @@ fun main(args: Array<String>) {
         var y_n:String = readLine().toString()
         while(y_n.toInt() == 1) {
             livro.AdicionarAutor()
-        }
+            print("Deseja Adicionar mais um autor? \n 1 - SIM \n 2 -NÃO")
+            var y_n:String = readLine().toString()                        
+        }        
+        print("Livro adicionado!")
     }
    
 
