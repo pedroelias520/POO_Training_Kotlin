@@ -1,3 +1,3 @@
 package Models
 
-class Autor constructor(var primeiroNome:string, var ultimoNome: string, email:string);
+class Autor constructor(var primeiroNome: String, var ultimoNome: String, email: String);

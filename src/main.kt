@@ -1,3 +1,3 @@
-class main {
-
-}
+fun main() = {
+    
+} 
