@@ -1,7 +1,8 @@
 package Models
 
+
 class Livro constructor(val titulo:String, val ano: Int) {
-       
+        var autores = mutableListOf<Autor>()
        fun AdicionarAutor() {
            val autor_nome = readLine().toString()           
            val autor_2nome = readLine().toString()
@@ -9,6 +10,10 @@ class Livro constructor(val titulo:String, val ano: Int) {
            autores.add(Autor(autor_nome, autor_2nome, autor_email))            
        }
        fun ToString(){
-           print("")
+           print("Nome:"+titulo)
+           print("Ano:"+ano)
+           for(i in autores){
+                print(i.primeiroNome+i.ultimoNome "\n")
+           }
        }
 }

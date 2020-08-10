@@ -1,9 +1,10 @@
-package Models
+package Models 
 package com.bezkoder.kotlin.numberparser
 
-class Biblioteca () {
-    companion object {
-       
+   
+class Biblioteca () {  
+    
+        var list =  mutableListOf<Livro>() 
         fun adicionarLivro() {
             val titulo: String = readLine().toString()
             val ano:String = readLine().toString()
@@ -34,6 +35,4 @@ class Biblioteca () {
                 }
             }
         }
-    }
-
 }
